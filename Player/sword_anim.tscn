@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://3nhuiydhtest"]
+
+[ext_resource type="Texture2D" uid="uid://dim65v3nw4bve" path="res://Assets/Player/sword_hit_anim.png" id="1_bslno"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6jlba"]
+atlas = ExtResource("1_bslno")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cj3p7"]
+atlas = ExtResource("1_bslno")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nhube"]
+atlas = ExtResource("1_bslno")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a45ic"]
+atlas = ExtResource("1_bslno")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hye2e"]
+atlas = ExtResource("1_bslno")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nypaq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6jlba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cj3p7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nhube")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a45ic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hye2e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SwordAnim" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_nypaq")
+frame = 2
+frame_progress = 0.377526
